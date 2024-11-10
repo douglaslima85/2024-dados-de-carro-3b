@@ -16,8 +16,8 @@
 } 
 body{
     font-family: var(--fonte-texto);
-    background-color: var(--cor2);
-    color: var(--cor2);
+    background-color: var(--cor4);
+    color: var(--cor5);
     height: 100vh;
 }
 header{
@@ -37,24 +37,37 @@ nav{
 }
 nav a{
     text-decoration: none;
-    color: var(--cor5);
-    margin: 0 2rem 1rem 0;
-    font-size: 1.5rem;
+    color: var(--cor3);
+    margin: 0 2em 1em 0;
+    font-size: 1.5em
 }
 nav a:hover{
     text-decoration: underline;
-    font-size: 1.7rem;
-    color: var(--cor5);
+    font-size: 1.7em;
+    color: var(--cor4);
     transition: 0.5s;
 }
+
+.caixa-grafico{
+    margin: 3em;
+    border: 3px double var(--cor5);
+    background-color: var(--cor3);
+}
+
+.caixa-grafico__texto{
+    padding: 2em;
+    font-size: 1.3em;
+    text-align: center;
+}
+
 footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--cor3);
-    color: var(--cor4);
+    background-color: var(--cor1);
+    color: var(--cor3);
     width: 100%;
     position: fixed;
     bottom: 0;
-    padding: 1rem;
+    padding: 1em;
 }
