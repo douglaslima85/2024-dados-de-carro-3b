@@ -8,6 +8,15 @@ async function vizualizaInfo(){
     const carrosMaisVotados = carros[0]
     const quantidadeDeVotos = Object.values(dados)[0]
 
+    const data = [
+        {
+            x:carros,
+            y:votos,
+            type: 'bar',
+        }
+    ]
+
+
     let paragrafo = document.createElement('p')
 
     paragrafo.classList.add('caixa-grafico__texto')
@@ -16,6 +25,11 @@ async function vizualizaInfo(){
 
     let caixa = document.getElementById('caixa-grafico')
     caixa.appendChild(paragrafo)
+
+    let grafico = document.createElement('div')
+    grafico.className ='grafico'
+    caixa.appendChild(grafico)
+    Plotly.newPlot(grafico, data)
 
 }
 
