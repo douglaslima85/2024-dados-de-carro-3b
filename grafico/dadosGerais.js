@@ -7,6 +7,7 @@ async function vizualizaInfo(){
     const carros = Object.keys(dados)
     const carrosMaisVotados = carros[0]
     const quantidadeDeVotos = Object.values(dados)[0]
+    const votos = Object.values(dados)
 
     const data = [
         {
